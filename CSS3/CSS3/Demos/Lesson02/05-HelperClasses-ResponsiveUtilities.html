@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multiple Grids</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body {
+			padding: 0 16px;
+		}
+		
+		[class*="col-"] {
+		  color:white;
+		  padding: 1em 0;
+		  background-color: blue;
+		  border: 1px solid powderblue;
+		}
+	</style>
+ </head>
+  <body>
+   
+  <div class="container">
+   <div class="text-hide">Right Aligned</div>
+  <div class="visible-xs">  <!-- <div class="hidden-xs"/> -->
+  <h1>Extra Small Mode</h1>
+  </div>
+  
+  <div class="visible-sm">
+  <h1>Small Mode</h1>
+  </div>
+  
+  <div class="visible-md">
+  <h1>Medium Mode</h1>
+  </div>
+  
+  <div class="visible-lg">
+  <h1>Large Mode</h1>
+  </div>
+  
+  <div class="row">
+		 <div class="center-block" style="width:150px;">Centered-Content</div>
+		</div>
+		 
+        <div class="col-lg-4 col-md-5 col-sm-5 col-xs-4">
+        	<span class="visible-lg">lg - 4</span>
+            <span class="visible-md">md - 5</span>
+            <span class="visible-sm">sm - 5</span>
+            <span class="visible-xs">xs - 4</span>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-2 col-xs-3">
+        	<span class="visible-lg">lg - 4</span>
+            <span class="visible-md">md - 4</span>
+            <span class="visible-sm">sm - 2</span>
+            <span class="visible-xs">xs - 3</span>
+        </div>
+        <div class="col-lg-4 col-md-3 col-sm-5 col-xs-5">
+        	<span class="visible-lg">lg - 4</span>
+            <span class="visible-md">md - 3</span>
+            <span class="visible-sm">sm - 5</span>
+            <span class="visible-xs">xs - 5</span>
+		</div>
+   </div>
+ <div>
+ <img src="images/Penguins.jpg" alt="Penguins" class="pull-right img-responsive"/>
+ </div>
+ 
+
+  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+    <script src="../jQuery/jquery-1.11.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accordion Demo</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../bootstrap-3.2.0-dist/css/bootstrap-theme-simplex.min.css" rel="stylesheet">
+
+ </head>
+  <body>
+  <div class="container">
+	<div class="page-header">
+		<h1>Collapsible demo</h1>
+	</div>
+
+	<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
+	   simple collapsible
+	</button>
+
+	<div id="demo" class="collapse">
+	  <h1>Simple Collapsible</h1>
+	</div>
+
+	<hr/>
+	<div id="accordion" class="panel-group">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<div class="panel-title">
+					<a href="#first" data-toggle="collapse" data-parent="#accordion">First</a>
+				</div>
+			</div>
+			<div class="panel-collapse collapse in" id="first">
+				<div class="panel-body">
+					<p>Para-1</p>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<div class="panel-title">
+					<a href="#second" data-toggle="collapse" data-parent="#accordion">Second</a>
+				</div>
+			</div>
+			<div class="panel-collapse collapse" id="second">
+				<div class="panel-body">
+					<p>Para-2</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+    <script src="../jQuery/jquery-1.11.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

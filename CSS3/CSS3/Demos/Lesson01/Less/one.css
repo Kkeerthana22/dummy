@@ -1,0 +1,38 @@
+div#header {
+  border: 1px solid #842210;
+}
+.bordered {
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
+#menu a {
+  color: #111;
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
+.post a {
+  color: red;
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
+#content {
+  width: 500px;
+}
+#content a {
+  color: white;
+}
+#content a:hover {
+  color: blue;
+}
+#content a.selected {
+  color: #ffff00;
+}
+.basic_operations {
+  height: 400px;
+  min-width: 300px;
+  max-width: 500px;
+}
+.color_operations {
+  color: #111111;
+  background-color: #555555;
+}

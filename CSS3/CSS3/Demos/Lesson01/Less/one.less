@@ -1,0 +1,78 @@
+// Declaring variables
+@border-width: 1px;
+@red: #842210;
+
+// Using variables
+div#header {
+    border: @border-width solid @red;
+} 
+
+
+// Mixins allow you to reuse the contents
+// of a certain ruleset in another ruleset
+
+// The bordered class
+.bordered {
+    border-top: dotted 1px black;
+    border-bottom: solid 2px black;
+}
+
+// We reuse the contents of the bordered class
+// in #menu a and .post a
+#menu a {
+    color: #111;
+    .bordered;
+}
+.post a {
+    color: red;
+    .bordered;
+}
+
+// In LESS you can nest your rulesets.
+// This is a very important feature because:
+// -You don't have to write out repeating long
+//  selectors
+// -It helps to structurize your code
+
+#content {
+    width: 500px;
+
+    a {
+        color: white;
+
+        // You can use the '&'-selector to
+        // apply a nested selector to the
+        // parent selector:
+        &:hover {
+            color: blue;
+        }
+
+        &.selected {
+            color: yellow
+        }
+    }
+}
+
+
+// In LESS you can operate on any number,
+// color or variable.
+
+// Basic operations
+@base: 200px;
+@height: @base * 2;
+@min-width: @base + 100;
+@max-width: (@min-width - 50) * 2;
+
+.basic_operations {
+    height: @height;
+    min-width: @min-width;
+    max-width: @max-width;
+}
+
+// Operating on colors:
+@base-color: #444;
+
+.color_operations {
+    color: @base-color / 4;
+    background-color: @base-color + #111;
+}

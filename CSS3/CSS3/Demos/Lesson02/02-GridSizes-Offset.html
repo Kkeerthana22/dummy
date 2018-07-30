@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grid Sizes</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body {
+			padding: 0 16px;
+		}
+		
+		[class*="col-"] {
+		  color:white;
+		  padding: 1em 0;
+		  background-color: blue;
+		  border: 1px solid powderblue;
+		}
+	</style>
+ </head>
+  <body>
+  <div class="container">
+	<h2>Grid Sizes-Offset</h2>
+   
+	<div class="row">
+		<div class="col-md-10">
+			<p>.col-md-10</p>
+		</div>
+		<div class="col-md-2">
+			<p>.col-md-2</p>
+	   </div>
+	</div> 
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<p>.col-md-8 col-md-offset-2</p>
+		</div>
+	</div> 
+   	<div class="row">
+		<div class="col-md-6">
+			<p>.col-md-6</p>
+		</div>
+		<div class="col-md-3 col-md-offset-2">
+			<p>.col-md-3 col-md-offset-2</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<p>.col-md-3</p>
+		</div>
+	</div>
+  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+    <script src="../jQuery/jquery-1.11.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

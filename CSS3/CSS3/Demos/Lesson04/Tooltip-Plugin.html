@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tooltip Demo</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+	
+ </head>
+  <body>
+  <div class="container">
+	<div class="page-header">
+		<h1>Tooltip demo</h1>
+	</div>
+
+	<input id="btnTest" type="button" value="Show tooltip" class="btn btn-success" data-toggle="tooltip" data-original-title="Default tooltip" title="Tooltip content goes here" data-placement="right" data-delay="500"/>
+  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+    <script src="../jQuery/jquery-1.11.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			 $('#btnTest').tooltip();
+		});
+	</script>
+  </body>
+</html>
